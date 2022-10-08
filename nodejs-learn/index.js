@@ -1,13 +1,12 @@
-// console.log('Hello Good Morning Indie!');
-// const sayHello = (name) => {
-//     return `Hello my name is ${name}`;
-// }
+// const fs = require('fs'); // require to core module
+// const moment = require('moment') // require to third party modules
 
-// console.log(sayHello('Indie'));
+//require local module
+const coba = require('./coba');
 
-const sayHello = require('./coba') // call module from coba.js
-
-sayHello('Indie'); // call function sayHello from coba.js
+console.log(coba.sayHello('Indie'), coba.umur, 'Tahun');
+console.log(coba.mahasiswa.cetakData());
+console.log(new coba.Hello());
 
 
 
